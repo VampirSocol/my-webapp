@@ -5,8 +5,10 @@
   <artifactId>my-webapp</artifactId>
   <packaging>war</packaging>
   <version>1.0-SNAPSHOT</version>
-  <name>my-webapp Maven Webapp</name>
-  <url>http://maven.apache.org</url>
+  <properties>
+    <maven.compiler.source>11</maven.compiler.source>
+    <maven.compiler.target>11</maven.compiler.target>
+  </properties>
   <dependencies>
     <dependency>
       <groupId>javax.servlet</groupId>
