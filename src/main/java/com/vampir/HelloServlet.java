@@ -10,7 +10,11 @@ public class HelloServlet extends HttpServlet {
 		PrintWriter writer = resp.getWriter();
 		String name = req.getParameter("username");
 		try {
-			writer.println("<html><h1>Hello " + name + "</h1></html>");
+			writer.println("<html>");
+			writer.println("  <h1>");
+			writer.println("    Hello " + name);
+			writer.println("  </h1>");
+			writer.println("</html>");
 		} finally {
 			writer.close();
 		}
